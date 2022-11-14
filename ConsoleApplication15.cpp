@@ -1,25 +1,21 @@
 #include <iostream>
 #include<string.h>
-#include<cstring>
-#include <cctype>
-#include <algorithm>
-#include <cstdlib>
 using namespace std;
 
 void NumIsTrue (const char Word[])
 { 
-    int k = 0;
+    int countK = 0;
     for (int n = 0; n <= strlen(Word); n++)
     {
         for (int mm = 48; mm <= 57; mm++)
         {
             if (Word[n] == ((char)mm))
             {
-                k++;
+                countK++;
             }
         }
     };
-    if (k == 1) cout << "Your text " << Word << " has only one number" << endl;
+    if (countK == 1) cout << "Your text " << Word << " has only one number" << endl;
     else cout << "Sorry, but your text has not only one number" << endl;
 };
 
