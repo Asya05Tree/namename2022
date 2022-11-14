@@ -28,11 +28,6 @@ int main()
     cout << " I will find the words with only 1 number\n";
     cout << " You have 20 symbols for ENGLISH Word \n";
     cout << "\nEnter 1st Word\t";
-    //Можна використовувати 
-    // setlocale(LC_ALL, "ukr"); 
-    // або SetConsoleCP(1251);
-    //SetConsoleOutputCP(1251);
-    //Але для спрощення усе англійскою
     char firstWord[20];
     cin >> firstWord;
     NumIsTrue(firstWord);
